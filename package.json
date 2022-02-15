@@ -7,7 +7,7 @@
     "start": "NODE_ENV=development webpack-dev-server --config ./config/webpack.config.development.js",
     "build": "rimraf dist && NODE_ENV=production webpack --config ./config/webpack.config.production.js",
     "test": "jest",
-    "deploy": "yarn run build && aws s3 cp dist/ s3://superimportantwebsite.com --recursive"
+    "deploy": "yarn run build && aws s3 cp dist/ s3://justinlowen.dev --recursive"
   },
   "author": "Steve Kinney <hello@stevekinney.net> (http://stevekinney.net)",
   "license": "MIT",
@@ -32,7 +32,8 @@
     "react-virtualized": "^9.18.5",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
-    "reselect": "^3.0.1"
+    "reselect": "^3.0.1",
+    "yarn": "^1.22.17"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
